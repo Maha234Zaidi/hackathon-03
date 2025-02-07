@@ -55,11 +55,11 @@ export default function Fetch() {
         Sanity Products
       </h1>
       <div className="flex flex-col md:flex-row justify-center md:justify-between items-center px-6 mt-10">
-        <ul className="flex flex-wrap space-x-3 ml-[150px]">
+        <ul className="sm:flex sm:flex-wrap sm:flex-row space-x-4 flex flex-col items-center justify-center">
           {products.map((product) => (
             <li key={product._id}>
               {product.image && (
-                <div className="w-[296px] h-[298px] bg-[#F0EEED] rounded-6xl transition-transform transform hover:-translate-y-2 hover:shadow-xl">
+                <div className="w-[296px] h-[298px] bg-[#F0EEED]  transition-transform transform hover:-translate-y-2 hover:shadow-xl">
                   <Image
                     src={urlFor(product.image).width(300).height(300).url()}
                     alt={product.name}
