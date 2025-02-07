@@ -62,7 +62,7 @@ const products = () => {
       <h1 className="text-3xl text-center font-extrabold md:text-5xl animate-bounce">
         New Arrivals
       </h1>
-      <div className="flex flex-col md:flex-row justify-center md:justify-between items-center px-6 mt-10  ">
+      <div className="flex flex-col md:flex-row justify-center md:justify-between items-center px-6 mt-10">
         {productsData.map((data) => {
           return (
             <div key={data.id}>
@@ -85,7 +85,7 @@ const products = () => {
                                     ))}
                                 </div>
                 <p className="font-bold mt-2">
-                  {data.price}{" "}
+                  {data.price}
                   <span className="text-gray-400 line-through pl-1">
                     {data.oldPrice}
                   </span>

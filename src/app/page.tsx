@@ -5,6 +5,9 @@ import FontSection from "./components/fontSection";
 import TopSelling from "./products/topSelling";
 import DressStyle from "./components/DressStyle";
 import CustomerCarousel from "./components/Carousel"
+import Fetch from "./components/fetch";
+
+
 
 
 
@@ -15,6 +18,7 @@ const page = () => {
       <HeroSection />
       <FontSection />
       <Products />
+      <Fetch/>
       <TopSelling />
       <DressStyle />
       <CustomerCarousel/>
